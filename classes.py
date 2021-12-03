@@ -13,7 +13,10 @@ class Flight():
     def open_seats(self):
         return self.capacity - len(self.passengers)
 
-flight = Flight(3)
+
+capacity= input("insert the number of available seats :")
+
+flight = Flight(int(capacity))
 people = ["zaki","younes","loulou","zineb"]
 
 for person in people:
